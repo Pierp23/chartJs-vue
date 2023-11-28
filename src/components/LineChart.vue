@@ -37,7 +37,7 @@ export default {
   methods: {
     getDataJson() {
       this.loaded = false,
-        axios.get('http://localhost:8080/' + 'Pierp23/FakeStats/db')
+        axios.get('https://my-json-server.typicode.com/Pierp23/FakeStats/db')
           .then(response => {
             // handle success
             console.log(response.data.MonthlyConnections);
